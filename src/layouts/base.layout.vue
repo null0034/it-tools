@@ -85,6 +85,12 @@ const tools = computed<ToolCategory[]>(() => [
               Corentin Thomasset
             </c-link>
           </div>
+          <div class="beian-info">
+            <img src="/icp-logo.png" alt="ICP备案" class="beian-icon" />
+            <c-link target="_blank" rel="noopener" href="https://beian.miit.gov.cn/">
+              京ICP备 2022006808号-2
+            </c-link>
+          </div>
         </div>
       </div>
     </template>
@@ -170,6 +176,21 @@ const tools = computed<ToolCategory[]>(() => [
   color: #838587;
   margin-top: 20px;
   padding: 20px 0;
+
+  .beian-info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 8px;
+    font-size: 12px;
+
+    .beian-icon {
+      margin-right: 4px;
+      width: 14px;
+      height: 14px;
+      object-fit: contain;
+    }
+  }
 }
 
 .sider-content {
